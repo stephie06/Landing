@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Landing page</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <!--font awesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <!--bootstrap-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.min.css">
+    
+</head>
+<body>
+
+    <!--navbar-->
+  <!--  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="#"> Navbar</a>
+
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse"
+                data-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar->
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home<span class="sr-only">(current)      
+                  </span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Conseil</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+              </li>
+          </ul>
+        </div>
+    </nav>-->
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">
+            <img src="image/diamond.png" width="50" height="50" alt="diamond"> IUTEA
+        </a>
+        <ul class="nav justify-content-end nav-tabs nav-pills">
+           <li class="nav-item">
+             <a class="nav-link active"  href="index.html">Accueil</a>
+           </li>
+
+           <!--Menu déroulante-->
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="formulaire.html" id="mon_id" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Formulaire  
+             </a>
+
+             <div class="dropdown-menu" aria-labelledby="mon_id">
+               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item" href="#">Action2</a>
+               <a class="dropdown-item" href="#">Action3</a>  
+             </div>
+               
+           </li>
+
+           <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services  
+             </a>
+             <div class="dropdown-menu" aria-labelledby="menu">
+               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item" href="#">Action2</a>
+               <a class="dropdown-item" href="#">Action3</a>  
+             </div>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link"  href="#">Aides</a>
+          </li>
+        <!--barre de recherche-->
+          <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="recherche" aria-label="search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>   
+          </form>
+       </ul>
+    </nav>
+
+    <div class="media">
+  <img src="image/fem.jpg" class="mr-3" alt="...">
+  <div class="media-body">
+    <h5 class="mt-0">Media heading</h5>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div>
+</div>
+    
+
+<!--formulaire-->
+<div class="container-fluid formula" >
+   <form >
+   	<!--les formes-->
+   	  <div class="form-group">
+   	  	<label for="formulaire_email">Adresse e-mail</label>
+   	  	<input type="email" class="form-control" id="formulaire_email" aria-describedby="emailHelp" placeholder="Entrer votre mail">   	  	
+   	  </div>
+   	  <div class="form-group">
+   	  	<label for="mdp">Mot de passe</label>
+   	  	<input type="passeword" class="form-control" id="mdp" aria-describedby="emailHelp" placeholder="Entrer votre mot de passe">   	  	
+   	  </div>
+   	  <div class="form-group">
+   	  	<label for="mdp">Pays</label>
+   	  	<select class="form-control" id="exampleformcontrol">
+   	  		<option>Selectionnez</option>
+   	  		<option>Amérique</option>
+   	  		<option>Argentine</option>
+   	  		<option>Bénin</option>
+   	  		<option>Belgique</option>
+   	  		<option>Cote d'ivoire</option>
+   	  		<option>Canada</option>
+   	  		<option>Autres...</option>
+   	  	</select>   	  	
+   	  </div>
+
+   	 <div class="form-group">
+   	  	<label for="mdp">Description</label>
+   	  	<textarea class="form-control" id="exampleTextarea" rows="6"></textarea>
+   	  </div>
+   	  <div class="form-group">
+    <label for="exampleFormControlFile1">Example</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+   	  <div class="form-group form-check">
+   	  	<input type="checkbox" class="form-check-input" id="examplecheck">   
+   	  	<label class="form-check-label" for="examplecheck">Check me out</label>	  	
+   	  </div>
+   	  <button type="submit" class="btn btn-primary">Envoyer</button>
+   </form>
+   </div>
+
+<!--partie icones-->
+    
+
+    
+   <!--carousel-->
+ <!--pagination-->
+   <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-end">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+  <!--footer-->
+    <div id="footer">
+    <p>This is a playground lanfing page.</p>
+    <!--<img src="image/amazon.svg" alt="#" width="200">-->
+
+    <!--font awesome-->
+   <ul>
+    	<div class="container">
+    		
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="fabs" >
+    	<li> <a href="#"> <i class="fab fa-facebook"> </i></a></li>
+    </div>
+</div>
+
+       <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="fabs" >
+    	<li> <a href="#"> <i class="fab fa-youtube"> </i> </a></li>
+    </div>
+</div>
+ <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="fabs" >
+    	<li> <a href="#"> <i class="fab fa-twitter"> </i></a></li>
+    </div>
+</div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="fabs" >
+        <li> <a href="#"> <i class="fab fa-instagram"> </i></a></li>
+    </div>
+</div>
+    </div>
+</div>
+    </ul>
+    </div>
+
+<script href="bootstrap.min.js"></script> 
+<script href="jquery.js"></script>
+<script href="popper.min.js"></script> 
+<script href="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
